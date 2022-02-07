@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   s.dependency 'ObjectMapper'
   s.dependency 'RxCocoa'
   s.dependency 'netfox'
-
+  
   #s.resources = "Core/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   
   s.swift_version = "5.1"
