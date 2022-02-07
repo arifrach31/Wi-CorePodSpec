@@ -8,40 +8,40 @@
 
 Pod::Spec.new do |s|
 
-    # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-    #
-    #  These will help people to find your library, and whilst it
-    #  can feel like a chore to fill in it's definitely to your advantage. The
-    #  summary should be tweet-length, and the description more in depth.
-    #
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
+  s.platform = :ios
+  s.ios.deployment_target = '14.0'
+  s.name = "Core"
+  s.summary = "WonderfullIndonesia Core.framework for modularization"
+  s.requires_arc = true
   
-    s.platform = :ios
-    s.ios.deployment_target = '14.0'
-    s.name = "Core"
-    s.summary = "WonderfullIndonesia Core.framework for modularization"
-    s.requires_arc = true
-    
-    s.version      = "1.0.1"
+  s.version      = "1.0.1"
+
+  s.license = { :type => "MIT", :file => "LICENSE" }
   
-    s.license = { :type => "MIT", :file => "LICENSE" }
-    
-    s.author             = { "ArifRach" => "Arifrach31@gmail.com" }
-    
-    s.homepage = "https://github.com/arifrach31/Wi-Core.git"
-   
-    s.source = { :git => "https://github.com/arifrach31/Wi-Core", :tag => "#{s.version}" }
+  s.author             = { "ArifRach" => "Arifrach31@gmail.com" }
   
-    s.framework = "UIKit"
+  s.homepage = "https://github.com/arifrach31/Wi-Core"
+ 
+  s.source = { :git => "https://github.com/arifrach31/Wi-Core.git", :tag => "#{s.version}" }
+
+  s.framework = "UIKit"
+
+  s.source_files = "Core/**/*.{swift}"
   
-    s.source_files = "Core/**/*.{swift}"
-    
-    s.dependency 'Moya', '~> 13.0.1'
-    s.dependency 'ObjectMapper'
-    s.dependency 'RxCocoa'
-    s.dependency 'netfox'
-    
-    #s.resources = "Core/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-    
-    s.swift_version = "5.1"
-    
-  end
+  s.dependency 'Moya', '~> 13.0.1'
+  s.dependency 'ObjectMapper'
+  s.dependency 'RxCocoa'
+  s.dependency 'netfox'
+
+  #s.resources = "Core/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+  
+  s.swift_version = "5.1"
+  
+end
